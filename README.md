@@ -24,10 +24,29 @@
 
 * Configure the .env with the databse created
 
+* Run migration
+        ```
+        php artisan migrate
+        ```
+
+* If needed you have a dump file exist to fill your database\*
+        ```
+        minitripadvisor.sql
+        ```
+
 * Launch localy the laravel server
         ```
         php artisan serve
         ```
+
+** \*All users have the same password : ``password``
+** Users : 
+``MaisonFutari``
+``fabio``
+``Eleazar``
+``marceline``
+``Julia``
+** While writing this part I see a bug where my request are case sensitive. And unfortunately I have no time left to refix it.
 
 ### Website Navigation
 
@@ -40,6 +59,9 @@ Click on the logo to go back home.
 
 I know I could added a edit button on reviews and place with the back-end obviously.  
 Make that a user can write only one review and add in database place an input file for pictures.
+I would make more error message and css improvment.  
+Disable case sensitive for login.  
+Make average grade for places.  
 Also, make a more obvious home button with the home.svg. ![home](home.svg)
 
 ## Description
