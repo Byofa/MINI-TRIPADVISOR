@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    font-family: no_virus;
+    color: #3d5a80;
+    background-color: #e0fbfc;
+    font-size: 1.5rem;
+
+}
+
+select, textarea, input[type=password], [type=email], [type=text], [type=number] {
+    background-color: #bedfeb;
+    border: 0;
+    margin-bottom: 1em;
+    color: #3d5a80;
+    font-family: no_virus;
+    width: 20rem;
+    height: 2rem;
+    display: flex;
+}
+
+input[type=submit] {
+    background-color: #bedfeb;
+    border: 3px solid #3d5a80;
+    color: #3d5a80;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+input[type=submit]:hover {
+background-color: #b5d2dd;
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    top: 5px;
+}
+
+/***************************Header**************************/
+
+header {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 6fr 4fr;
+    margin-bottom: 5em;
+}
+.top {
+    grid-area: 1/10/1/span 2;
+    background-color: #98c1d9;
+    z-index: 1;
+    border-bottom: 5px solid #ee6c4d;
+}
+
+.color {
+    grid-area: 1/1/1/span 11;
+    background-color: #98c1d9;
+    border-bottom: 5px solid #ee6c4d;
+}
+
+.middle {
+    grid-area: 1/6/3/7;
+    border-bottom: 5px solid #ee6c4d;
+    border-right: 5px solid #ee6c4d;
+    border-left: 5px solid #ee6c4d;
+    display: flex;
+}
+
+.middle a {
+    background-color: #98c1d9;
+    z-index: 1;
+}
+
+#logo {
+    align-items: flex-end;
+    width: 100%;
+}
+
+.add {
+    grid-area: 1/1/1/1;
+    z-index: 1;
+}
+
+.add img {
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add a {
+    background-color: #bedfeb;
+    border: 3px solid #3d5a80;
+    color: #3d5a80;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+.add a:hover {
+    background-color: #b5d2dd;
+    cursor: pointer;
+}
+
+.add a:active {
+    top: 5px;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.connexion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.connexion a {
+    background-color: #bedfeb;
+    border: 3px solid #3d5a80;
+    color: #3d5a80;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+.connexion a:hover {
+    background-color: #b5d2dd;
+    cursor: pointer;
+}
+
+.connexion a:active {
+    top: 5px;
+}
+.connexion p {
+    margin: 0;
+}
+
+/**********************Main Grid****************************/
+main {
+    grid-area: 2 / 1 / 2 / 11;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+/**********************Register Blade***********************/
+
+.registerOrConnect {
+    grid-area: 2 / 4 / 2 / 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.or {
+    border-top: 5px solid #ee6c4d;
+    border-left: 5px hidden #ee6c4d;
+    border-right: 5px hidden #ee6c4d;
+    border-bottom: 5px solid #ee6c4d;
+    text-transform: uppercase;
+}
+
+.or p {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.register {
+    margin-top: 1em;
+    border: 8px solid #3d5a80;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ee6c4d;
+    padding: 1rem;
+}
+
+.login {
+    margin-top: 1em;
+    border: 8px solid #3d5a80;
+}
+
+
+/*********************New Place Blade************************/
+
+.createPlace {
+    grid-area: 2 / 6 / 2 / 6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/**********************Home Blade****************************/
+
+.list {
+    grid-area: 2 / 2 / span 3 / span 8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.place a{
+    width: 15em;
+    height: 15em;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ee6c4d;
+}
+
+.place a:hover {
+    background-color: #b5d2dd;
+    cursor: pointer;
+}
+
+.place a:active {
+    top: 5px;
+}
+
+.place {
+    border: 8px solid #3d5a80;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.place span {
+    font-size: 2rem;
+    color: #3d5a80;
+}
+/**********************Place Card***************************/
+.name {
+    grid-area: 1/1/1/12;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.name hr {
+    border-top: 3px solid #3d5a80;
+    width: 40rem;
+    height: 3px;
+    background-color: #ee6c4d;
+}
+.placeInfo{
+    grid-area: 2/5/2/8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.englobe {
+    border: 8px solid #3d5a80;
+}
+
+.address {
+    padding: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content:space-between;
+    border: 5px solid #ee6c4d;
+}
+
+.address input{
+    width: 20px;
+}
+
+.listGrade {
+    grid-area: 4/4/4/9;
+    margin-top: 1em;
+    border: 8px solid #3d5a80;
+}
+
+.newGrade {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.newGrade label{
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: #ee6c4d;
+    padding-bottom: 0.3rem;
+}
+
+.newGrade textarea {
+    width: 100%;
+    height: 5rem;
+}
+
+.review {
+    border: 5px solid #ee6c4d;
+}
+
+.rate {
+    display: flex;
+    justify-content:space-around;
+}
+
+.rate input {
+    width: 20px;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+}
+
+.h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: #ee6c4d;
+    font-size: 2rem;
+}
+
+.hr {
+    border-top: 3px solid #bedfeb;
+    width: 40rem;
+}
+
+/**************************Font*****************************/
+
+@font-face {
+    font-family: 'no_virus';
+    src: url('../fonts/no_virus.woff2') format('woff2'),
+         url('../fonts/no_virus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
