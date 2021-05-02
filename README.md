@@ -62,6 +62,8 @@ Make that a user can write only one review and add in database place an input fi
 I would make more error message and css improvment.  
 Disable case sensitive for login.  
 Make average grade for places.  
+My code is a lot messy, I didn't had time to comment it.  
+Next time I will comment while i'm writing to save time.
 Also, make a more obvious home button with the home.svg.
 
 ## Description
