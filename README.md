@@ -4,13 +4,13 @@
 
 ### Dependencies
 
-* Need composer and PHP. 
+* Need composer, PHP and MySQL. 
 
 ### Installing
 
 * Git clone or download the repositery.
 
-* Install vendor 
+* Install vendor  
             ```
             composer update
             ```
@@ -24,12 +24,12 @@
 
 * Configure the .env with the databse created
 
-* Run migration
+* Run migration  
         ```
         php artisan migrate
         ```
 
-* If needed you have a dump file exist to fill your database\*
+* If needed you have a dump file exist to fill your database\*  
         ```
         minitripadvisor.sql
         ```
@@ -39,14 +39,14 @@
         php artisan serve
         ```
 
-** \*All users have the same password : ``password``
-** Users : 
-``MaisonFutari``
-``fabio``
-``Eleazar``
-``marceline``
-``Julia``
-** While writing this part I see a bug where my request are case sensitive. And unfortunately I have no time left to refix it.
+\*All users have the same password : ``password``  
+Users :  
+``MaisonFutari``  
+``fabio``  
+``Eleazar``  
+``marceline``  
+``Julia``  
+While writing this part I see a bug where my request are case sensitive. And unfortunately I have no time left to refix it.
 
 ### Website Navigation
 
@@ -62,7 +62,7 @@ Make that a user can write only one review and add in database place an input fi
 I would make more error message and css improvment.  
 Disable case sensitive for login.  
 Make average grade for places.  
-Also, make a more obvious home button with the home.svg. ![home](home.svg)
+Also, make a more obvious home button with the home.svg.
 
 ## Description
 
@@ -88,5 +88,5 @@ Fabio Machado   [Linkedin](https://www.linkedin.com/in/fabio-aires-machado/)
 
 ## License
 
-This project is an opensource, read the CGV of ETNA school Paris.
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
 
