@@ -25,7 +25,7 @@
             </div>
             @else
             <div class="connexion">
-                <a href="{{route('register')}}">Register</a>
+                <a href="{{route('register')}}">Register or Sign-in</a>
                 <!-- <a href="{{route('login')}}">Login</a> -->
             </div>
             @endif

@@ -5,6 +5,7 @@
         <form action="{{route('createUser')}}" method="Post">
             @csrf
             <div class="input">
+                <p class="underline">Register</p>
                 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required minlength="4" maxlength="16" autocomplete="username" autofocus>
@@ -31,7 +32,7 @@
                 @endif
                 
                 <input type="submit" value="Register">
-                
+
             </div>
         </form>
     </div>
@@ -42,7 +43,7 @@
         <form action="{{route('auth')}}" method="Post">
             @csrf
             <div class="input">
-               
+                <p class="underline">Login</p>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required minlength="4" maxlength="16" autocomplete="username" autofocus>
                
@@ -55,7 +56,7 @@
                 </div>
                 @endif
                
-                <input type="submit" value="Login">
+                <input type="submit" value="Sign-in">
 
             </div>
         </form>

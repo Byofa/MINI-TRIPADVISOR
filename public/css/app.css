@@ -25,11 +25,15 @@ input[type=submit] {
     text-decoration: none;
     padding: 0.5rem;
     border-radius: 5%;
+    font-family: no_virus;
+    font-size: 2rem;
 }
 
 input[type=submit]:hover {
-background-color: #b5d2dd;
+    font-family: no_virus;
+    background-color: #b5d2dd;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 input[type=submit]:active {
@@ -188,7 +192,13 @@ main {
     border: 8px solid #3d5a80;
 }
 
-
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: #ee6c4d;
+    margin-top: 0;
+    padding-bottom: 0.3rem;
+}
 /*********************New Place Blade************************/
 
 .createPlace {
@@ -196,6 +206,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 8px solid #3d5a80;
 }
 /**********************Home Blade****************************/
 
