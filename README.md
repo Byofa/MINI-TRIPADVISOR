@@ -58,7 +58,7 @@ Click on the logo to go back home.
 ## Improvment if I had Time
 
 I know I could added a edit button on reviews and place with the back-end obviously.  
-Make that a user can write only one review and add in database place an input file for pictures.
+Make that a user can write only one review and add in database place an input file for pictures.  
 I would make more error message and css improvment.  
 Disable case sensitive for login.  
 Make average grade for places.  
