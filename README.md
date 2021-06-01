@@ -12,7 +12,7 @@
 
 * Install vendor  
             ```
-            composer update
+            composer install
             ```
 
 * Create a MySQL database
